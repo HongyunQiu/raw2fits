@@ -139,6 +139,7 @@ def convert_raw_directory_to_fits(root_dir: str, width: int, height: int, byteor
             if not filename.lower().endswith('.raw'):
                 continue
             input_path = os.path.join(dirpath, filename)
+            print(f"Processing: {input_path}", flush=True)
             output_path = derive_output_path(input_path)
             try:
                 validate_file_size(input_path, width, height)
