@@ -1,0 +1,5 @@
+# Ignore raw and FITS data files
+*.raw
+*.fits
+
+
